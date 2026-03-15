@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Ruleta Aleatoria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Ruleta Aleatoria</h1>
+
+<div class="layout">
+
+<div class="editor">
+
+<h2>Opciones</h2>
+
+<textarea id="listaOpciones">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</textarea>
+
+</div>
+
+
+<div class="ruleta-area">
+
+<div class="ruleta-box">
+
+<div class="flecha"></div>
+
+<canvas id="ruleta" width="500" height="500"></canvas>
+
+</div>
+
+<div id="resultado"></div>
+
+</div>
+
+
+<div class="controles">
+
+<h2>Controles</h2>
+
+<ul>
+<li><b>Enter</b> → Girar ruleta</li>
+<li><b>Space</b> → Girar ruleta</li>
+<li><b>S</b> → Eliminar opción seleccionada</li>
+<li><b>R</b> → Reiniciar ruleta</li>
+</ul>
+
+<h2>Historial</h2>
+
+<ul id="historial"></ul>
+
+</div>
+
+</div>
+
+
+<!-- Modal -->
+
+<div id="modalResultado" class="modal">
+
+<div class="modal-contenido">
+
+<h2>Resultado:</h2>
+
+<div id="textoResultado"></div>
+
+<div class="modal-botones">
+
+<button id="btnEliminar">Eliminar</button>
+<button id="btnCerrar">Cerrar</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
